@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/NotForLandingPage.css" type="text/css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Order Page</title>
+
+
+        <style media="screen">
+        body{
+          background-image : url('images/noodle_bg1_edited.jpg');
+          background-size : 100%;
+
+        }
+        </style>
+    </head>
+    <body>
+      <section id="navbar" class="sticky-top">
+        <nav id="NavBarArea" class="navbar navbar-expand-lg navbar-light">
+    <a id="NavImg" class="navbar-brand" href="LandingPage.html">  <img src="images/Logo_1.png" data-toggle="tooltip" title="B&C stands for Brandon and Chester!"  ></a> <h5> <b> Welcome to B&C Shd Bhd </b> </h5>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="LandingPage.html"> <i class="far fa-arrow-alt-circle-left fa-lg"></i> Back to main page<span class="sr-only"></span></a>
+        </li>
+      
+
+
+      </ul>
+        </div>
+      </nav>
+      </section>
+
+  <body>
+          <div class="container my-2">
+            <ul class="list-group">
+              <li class="list-group-item bg-info">Rendang Instant Spaghetti per pack is Rm 8.50. Cabonara Instant Spaghetti per pack is Rm 7.80
+              <br> <small>       <b>      Note: The price is inclusive of SST and delivery fee. </b> </small>
+ </li>
+            </ul>
+          </div>
+
+
+        <form class="container mt-2">
+    <div class="form-group row">
+        <label for="rendangSpaghetti" class="col-sm-2 col-form-label text-light"><b> Rendang Instant Spaghetti : </b></label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="rendangSpaghetti" placeholder="How many packets?">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="cabonaraSpaghetti" class="col-sm-2 col-form-label text-light"> <b> Cabonara Instant Spaghetti : </b></label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="cabonaraSpaghetti" placeholder="How many packets?">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+            <button type="submit" onclick="openWin()" class="btn btn-primary btn-lg">Proceed</button>
+        </div>
+    </div>
+</form>
+
+
+        <script>
+
+
+        function openWin() {
+          var rendangSpaghetti = document.getElementById("rendangSpaghetti").value;
+            var cabonaraSpaghetti = document.getElementById("cabonaraSpaghetti").value;
+          var caboPrice = cabonaraSpaghetti * 8.50;
+          var rendangPrice = rendangSpaghetti * 7.80;
+          var totalPrice = caboPrice + rendangPrice ;
+          window.alert("Your total order amount is RM" + totalPrice + ". You will be redicted to fill up your delivery details.");
+          window.open("order.html");
+        }
+        </script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
