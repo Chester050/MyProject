@@ -1,0 +1,77 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.TransparentBackgroudText{
+
+
+  margin-bottom:3px;
+}
+
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Arial,serif;
+  font-size: 1.125rem;
+}
+
+nav{
+  background-image: linear-gradient(to right, #FAD7A0,#AF601A);
+
+}
+.navbar-brand{
+  padding-top: 0px;
+}
+
+
+#NavBarArea{
+  transition:0.6s;
+}
+#navbarContent a{
+  margin-right:5px;
+  font-weight: bold;
+  color:white;
+  transition: 0.5s;
+}
+#navbarContent a:hover{
+  font-size: 1.5rem;
+  transform: translateY(-10px);
+  color:black;
+
+}
+#navbar img{
+  position: relative;
+  height:60px;
+  width:80px;
+  transition: 0.5s ;
+  background-color:#ECF0F1;
+  border-radius:20%;
+}
+
+#navbar img:hover{
+  transform:translate(10px,-5px);
+}
+
+
+#navbar button:hover{
+border:none;
+outline:none;
+}
+
+#navbarContent{
+float:right;
+text-align:right;
+
+}
+
+.carousel-item img{
+height:450px;
+}
+
+.nav-menus{
+background-color: #AEB2B4;
+}
